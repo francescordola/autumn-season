@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+
+  <title>Autumn Season</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="sketch.js"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="grid-container">
+  <div class="line1"></div>
+
+  <div class="left-bar">
+    <p>
+      location: <span id="location"> &nbsp;Baoshan-China</span>
+    </p>
+  </div>
+
+  <div class="right-bar" href="info/index.html">
+
+    <img src="img/0.svg" id="red">
+    <img src="img/0.svg" id="grey">
+    <img src="img/0.svg" id="blue">
+
+    <a href="info/index.html"><img src=" img/info.svg" id="home"></a>
+    <!-- <a href="info/index.html"><img src=" img/info.svg" id="home" class="cursor"></a> -->
+  </div>
+
+  <div class="text-home">
+    How does climate change affect fungal growth and activity?</br>
+    How do fungi mediate ecosystem responses to climatic variations?</br>
+    </br>
+    Fungi play a dominant role in the natural kingdom. Therefore, modifications in fungal growth resulting from global
+    climate shifts will have significant effects on the ecosystem functions. Meteorological changes are already
+    impacting mushrooms life, but numerous are still the questions and knowledge gaps about the behaviour of this
+    complex system.</br>
+    Matsutake (Tricholoma matsutake) is a wild mushroom known as the marker of the <span id=text-home-title>autumn
+      season</span><span id=text-home-title-asterisco>*</span>.
+    It is a mycorrhizal fungus that, thanks to a symbiotic relationship with trees, helps the forests grow in areas
+    destroyed by human occupancy. </br>
+    Appeared firstly in Japan, the history of matsutake talks about travellers, economy and today, more than ever,
+    environmental emergency. As a precious example of collaboration between different species, the impact of the climate
+    crisis and unethical human actions over this fungus is an urgent concern. </br>
+    </br>
+  </div>
+
+  <div class="text2-home">
+    The fruiting of matsutake has been studied in the village of Haitangwa, located in the east of Yunnan Province
+    around Baoshan City, China. Scientists identified, in this region, irregularities in the season of the fungi
+    productivity as a consequence of climate change.
+    Three are the primary variables affecting matsutake growth: temperature, humidity and precipitation. Nevertheless,
+    the lack of long term datasets makes not yet possible comprehend the mushrooms evolution in regional climate
+    patterns.</br>
+    <span class="question">Is it possible to apply new methods to interpret the climate-fruiting relationship?</span>
+  </div>
+
+  <div class="text3-home">
+    Autumn Season is a web application that visualises and archive climate data.
+    The project is divided into three
+    main phases:
+    <br>. 1 collection <br>. 2 analysis <br>. 3 simulations <br>
+    <br>
+    On July 1, 2020, phase 1 started, saving every 24 hours, weather data over the selected area. The natural course of
+    time guides this phase. It is necessary to wait for, at least, one year to have the right amount of data over the
+    four seasons. After one year, the project will go through the second phase, the analysis and visualisation of the
+    acquired data. Phase 3 will use emerging technologies to predict and speculate about the fungi evolution in
+    responses to current and future environmental changes.<br>
+    <!-- <br>
+    How does matsutake behave in diverse world scenarios? -->
+  </div>
+
+  <div class="line"></div>
+
+  <div class="text3-home-symbol">
+    *
+  </div>
+
+  <div id="canvas-show"></div>
+
+  <div class="current">now</div>
+  <div class="current-symbol">:</div>
+
+  <ul class="data-names">
+    <li id="temp">temperature: <span id="temperature"></span>°</li>
+    <li id="hum">humidity: <span id="humidity"></span>%</li>
+    <li id="prep">precipitation: <span id="precipitation"></span>mm</li>
+  </ul>
+
+  <span id="time"></span>
+
+  <div class="forecastday">today</div>
+  <div class="forecastday-symbol">:</div>
+
+  <div class="forecastday-value">
+    <span>max temp_c:</span> <span id="maxtemp_c"></span>°</br>
+    <span>min temp_c:</span> <span id="mintemp_c"></span>°</br>
+    <span>avg temp_c:</span> <span id="avgtemp_c"></span>°</br>
+    <span>tot precipitation:</span> <span id="totalprecip_mm"></span>mm</br>
+    <span>avg humidity:</span> <span id="avghumidity"></span>%</br>
+    <span>max humidity:</span> <span id="maxhumidity"></span>/</br>
+  </div>
+
+  <footer>
+    &copy; 2020<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://francescordola.com/" style="color: black;">francescordola</a>
+
+  </footer>
+
+</body>
+
+</html>
