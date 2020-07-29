@@ -3,8 +3,8 @@ body {
   width: 100%;
   height: 100%;
   /* SAFARI SCROLL LATERAL */
-  /* position: relative;
-  overflow-x: hidden; */
+  position: relative;
+  overflow-x: hidden;
 }
 
 /* GRID */
