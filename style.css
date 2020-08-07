@@ -34,7 +34,7 @@ body {
   margin: 0;
   border: 2px solid black;
   grid-column: 1;
-  grid-row: 1/7;
+  grid-row: 1/8;
 }
 
 .left-bar p {
@@ -59,7 +59,7 @@ body {
   margin: 0;
   border: 2px solid black;
   grid-column: 16;
-  grid-row: 1/7;
+  grid-row: 1/8;
 }
 
 #red {
@@ -107,33 +107,79 @@ body {
 }
 
 /* TEXT HOMEPAGE */
-.text-home {
+
+.line-questions {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 1 / 17;
+  border: 2px solid black;
+  background-color: white;
+  z-index: 1;
+}
+
+.text-home-questions {
+  grid-row: 1;
   padding-top: 30.5px;
+  font-size: 80px;
+  grid-column: 3 / 15;
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 1.15;
+  font-weight: 700;
+  z-index: 1;
+  height: 100vh;
+}
+
+.text-home-questions-asterisco {
+  grid-row: 1;
+  text-align: right;
+  padding-top: 126.5px;
+  font-size: 80px;
+  font-weight: 500;
+  grid-column: 2;
+  font-family: 'IBM Plex Sans', sans-serif;
+  z-index: 1;
+
+}
+
+.text-home-questions-arrow {
+  margin-left: 82.9%;
+  width: 20px;
+  transform: rotate(90deg);
+  z-index: 1;
+  position: absolute;
+  bottom: 0%;
+}
+
+.text-home {
   font-size: 70px;
   grid-column: 3 / 15;
   font-family: 'IBM Plex Serif', serif;
   line-height: 1.15;
   font-weight: 400;
+  grid-row: 3;
+  border: 0px solid black;
 }
 
 /* TITLE = AUTUMN SEASON */
-#text-home-title {
+#text-home-autumnseason {
   font-family: 'IBM Plex Sans', sans-serif;
   /* font-style: italic; */
-  font-weight: 600;
+  font-size: 80px;
+  font-weight: 700;
 }
 
 #text-home-title-asterisco {
   font-family: 'IBM Plex Sans', sans-serif;
   /* font-style: italic; */
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 80px;
 }
 
 /* TEXT RESEARCH SMALL */
 .text2-home {
   margin: 0;
-  grid-column: 3 / 15;
-  grid-row: 2;
+  grid-column: 3 / 9;
+  grid-row: 4;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 21px;
   font-weight: 300;
@@ -154,7 +200,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   grid-column: 9 / 15;
-  grid-row: 5;
+  grid-row: 7;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -166,7 +212,7 @@ body {
   margin: 0;
   padding-top: 28.5px;
   grid-column: 8;
-  grid-row: 5;
+  grid-row: 7;
   text-align: right;
   padding-bottom: 100px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -176,17 +222,10 @@ body {
   z-index: 2;
 }
 
-/* .line1 {
-  grid-row: 0;
-  grid-column: 1 / 17;
-  border-top: 2px solid black;
-  z-index: 1;
-} */
-
 /* LINES */
-.line {
-  grid-row-start: 5;
-  grid-row-end: 7;
+.line-bottom {
+  grid-row-start: 7;
+  grid-row-end: 9;
   grid-column: 1 / 17;
   border: 2px solid black;
   background-color: white;
@@ -194,8 +233,8 @@ body {
 }
 
 .line-thanks {
-  grid-row-start: 4;
-  grid-row-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 9;
   grid-column: 1 / 17;
   border: 2px solid black;
   background-color: white;
@@ -203,21 +242,35 @@ body {
 }
 
 /* TEXT THANKS PAGE */
+
+#text-home-autumnseason2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-style: italic; */
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#text-home-title-asterisco2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-style: italic; */
+  font-weight: 500;
+  font-size: 60px;
+}
+
 .text-thanks {
-  padding-top: 54px;
-  font-size: 45px;
+  padding-top: 41px;
+  font-size: 50px;
   grid-column: 3 / 9;
   font-family: 'IBM Plex Serif', sans-serif;
   line-height: 1.15;
   font-weight: 400;
 }
 
-/* TEXT THANKS RINGRAZIAMENTI*/
 .text2-thanks {
   margin: 0;
   padding-top: 30px;
   grid-column: 9 / 15;
-  grid-row: 4;
+  grid-row: 6;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -229,7 +282,7 @@ body {
   margin: 0;
   padding-bottom: 30px;
   grid-column: 9 / 15;
-  grid-row: 5;
+  grid-row: 7;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -240,7 +293,7 @@ body {
 .text2-home-symbol {
   margin: 0;
   grid-column: 8;
-  grid-row: 5;
+  grid-row: 7;
   text-align: right;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 35px;
@@ -252,7 +305,7 @@ body {
 /* WEATHER DATA */
 .current {
   grid-column: 2/6;
-  grid-row: 3;
+  grid-row: 5;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -261,7 +314,7 @@ body {
 
 .current-symbol {
   grid-column: 3;
-  grid-row: 3;
+  grid-row: 5;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -321,7 +374,7 @@ li:before {
   font-weight: 400;
   position: sticky;
   grid-column: 3/16;
-  grid-row: 3;
+  grid-row: 5;
   line-height: 1.5;
   z-index: 0;
 }
@@ -329,7 +382,7 @@ li:before {
 #time {
   padding-top: 145px;
   grid-column: 3/5;
-  grid-row: 3;
+  grid-row: 5;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -341,7 +394,7 @@ li:before {
   margin-bottom: 10%; */
 
   grid-column: 1 / 16;
-  grid-row: 3;
+  grid-row: 5;
   z-index: -2;
 
   /* display: block;
@@ -354,7 +407,7 @@ li:before {
 
 .forecastday {
   grid-column: 2/6;
-  grid-row: 4;
+  grid-row: 6;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -363,7 +416,7 @@ li:before {
 
 .forecastday-symbol {
   grid-column: 3/6;
-  grid-row: 4;
+  grid-row: 6;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -375,7 +428,7 @@ li:before {
   margin-bottom: 70px;
   line-height: 1.5;
   grid-column: 3/8;
-  grid-row: 4;
+  grid-row: 6;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -386,7 +439,7 @@ li:before {
 footer {
   grid-column: 2/10;
   text-align: left;
-  grid-row: 6;
+  grid-row: 8;
   font-size: 15px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
