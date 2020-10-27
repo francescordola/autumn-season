@@ -2,7 +2,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  /* SAFARI SCROLL LATERAL */
   position: relative;
   overflow-x: hidden;
 }
@@ -14,27 +13,23 @@ body {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 1em;
   position: relative;
   overflow-x: hidden;
   cursor: default;
 }
 
 /* CURSOR */
-/* .cursor {
+.cursor {
   cursor: url(img/0.svg), auto;
 }
-.right-bar:hover {
-  cursor: url(img/0.svg), auto;
-} */
 
 /* LEFT BAR */
 .left-bar {
   margin: 0;
-  border: 2px solid black;
-  grid-column: 1;
-  grid-row: 1/8;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  grid-column: 1/9;
+  grid-row: 1;
 }
 
 .left-bar p {
@@ -47,278 +42,64 @@ body {
   bottom: 0%;
   transform: rotate(270deg);
   margin-left: 3.2%;
-  z-index: 1;
-}
-
-#location {
-  font-weight: 400;
-}
-
-/* RIGHT BAR */
-.right-bar {
-  margin: 0;
-  border: 2px solid black;
-  grid-column: 16;
-  grid-row: 1/8;
+  z-index: 2;
 }
 
 #red {
   width: 20px;
-  position: fixed;
   right: 96.7%;
-  margin-top: 15px;
+  margin-top: 10px;
   z-index: 1;
-}
-
-#grey {
-  width: 20px;
-  position: fixed;
-  right: 96.7%;
-  margin-top: 45px;
-  z-index: 1;
-}
-
-#blue {
-  width: 20px;
-  position: fixed;
-  right: 96.7%;
-  margin-top: 75px;
-  z-index: 1;
-}
-
-#home {
-  width: 20px;
-  /* left: 35%; */
-  grid-column: 16;
-  padding-left: 1.65%;
-  padding-right: 1.65%;
-  padding-bottom: 1.65%;
-  padding-top: 15px;
-  position: fixed;
-}
-
-#info {
-  width: 20px;
-  position: fixed;
-  left: 95.65%;
-  grid-column: 16;
-  margin-bottom: 20px;
-  bottom: 0%;
 }
 
 /* TEXT HOMEPAGE */
 
 .line-questions {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column: 1 / 17;
-  border: 2px solid black;
-  background-color: white;
-  z-index: 1;
+  grid-row: 3;
+  grid-column: 5 /9;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.line-data {
+  grid-row: 2;
+  grid-column: 1 /9;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .text-home-questions {
   grid-row: 1;
-  padding-top: 30.5px;
-  font-size: 80px;
-  grid-column: 3 / 15;
+  font-size: 32px;
+  grid-column: 2 / 8;
   font-family: 'IBM Plex Sans', sans-serif;
-  line-height: 1.15;
   font-weight: 700;
-  z-index: 1;
-  height: 100vh;
+  z-index: 2;
+  /* height: 100vh; */
+  line-height: 1.30;
+  margin-bottom: 10px;
 }
 
 .text-home-questions-asterisco {
   grid-row: 1;
-  text-align: right;
-  padding-top: 126.5px;
-  font-size: 80px;
-  font-weight: 500;
-  grid-column: 2;
+  font-size: 32px;
+  grid-column: 1;
+  text-align: center;
   font-family: 'IBM Plex Sans', sans-serif;
-  z-index: 1;
-
-}
-
-.text-home-questions-arrow {
-  margin-left: 82.9%;
-  width: 20px;
-  transform: rotate(90deg);
-  z-index: 1;
-  position: absolute;
-  bottom: 0%;
-}
-
-.text-home {
-  font-size: 70px;
-  grid-column: 3 / 15;
-  font-family: 'IBM Plex Serif', serif;
-  line-height: 1.15;
-  font-weight: 400;
-  grid-row: 3;
-  border: 0px solid black;
-}
-
-/* TITLE = AUTUMN SEASON */
-#text-home-autumnseason {
-  font-family: 'IBM Plex Sans', sans-serif;
-  /* font-style: italic; */
-  font-size: 80px;
   font-weight: 700;
-}
-
-#text-home-title-asterisco {
-  font-family: 'IBM Plex Sans', sans-serif;
-  /* font-style: italic; */
-  font-weight: 500;
-  font-size: 80px;
-}
-
-/* TEXT RESEARCH SMALL */
-.text2-home {
-  margin: 0;
-  grid-column: 3 / 9;
-  grid-row: 4;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 21px;
-  font-weight: 300;
-  line-height: 1.35;
-}
-
-.question {
-  font-size: 21px;
-  grid-column: 3 / 15;
-  font-family: 'IBM Plex Sans', sans-serif;
-  line-height: 1.15;
-  font-weight: 400;
-}
-
-/* TEXT ASTERISCO */
-.text3-home {
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  grid-column: 9 / 15;
-  grid-row: 7;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 1.30;
   z-index: 2;
-}
-
-.text3-home-symbol {
-  margin: 0;
-  padding-top: 28.5px;
-  grid-column: 8;
-  grid-row: 7;
-  text-align: right;
-  padding-bottom: 100px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 35px;
-  font-weight: 300;
-  line-height: 1.20;
-  z-index: 2;
-}
-
-/* LINES */
-.line-bottom {
-  grid-row-start: 7;
-  grid-row-end: 9;
-  grid-column: 1 / 17;
-  border: 2px solid black;
-  background-color: white;
-  z-index: 1;
-}
-
-.line-thanks {
-  grid-row-start: 6;
-  grid-row-end: 9;
-  grid-column: 1 / 17;
-  border: 2px solid black;
-  background-color: white;
-  z-index: 1;
-}
-
-/* TEXT THANKS PAGE */
-
-#text-home-autumnseason2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  /* font-style: italic; */
-  font-size: 60px;
-  font-weight: 700;
-}
-
-#text-home-title-asterisco2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  /* font-style: italic; */
-  font-weight: 500;
-  font-size: 60px;
-}
-
-.text-thanks {
-  padding-top: 41px;
-  font-size: 50px;
-  grid-column: 3 / 9;
-  font-family: 'IBM Plex Serif', sans-serif;
-  line-height: 1.15;
-  font-weight: 400;
-}
-
-.text2-thanks {
-  margin: 0;
-  padding-top: 30px;
-  grid-column: 9 / 15;
-  grid-row: 6;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 21px;
-  font-weight: 400;
+  height: 100vh;
   line-height: 1.30;
-  z-index: 1;
 }
 
-.text2-thanks-references {
-  margin: 0;
-  padding-bottom: 30px;
-  grid-column: 9 / 15;
-  grid-row: 7;
+.text-home-wip {
+  grid-row: 1;
+  font-size: 28px;
+  grid-column: 2 / 7;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 21px;
+  padding-top: 11.5em;
   font-weight: 400;
-  line-height: 1.30;
-  z-index: 1;
-}
-
-.text2-home-symbol {
-  margin: 0;
-  grid-column: 8;
-  grid-row: 7;
-  text-align: right;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 35px;
-  font-weight: 300;
-  line-height: 1.20;
   z-index: 2;
-}
-
-/* WEATHER DATA */
-.current {
-  grid-column: 2/6;
-  grid-row: 5;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  position: sticky;
-}
-
-.current-symbol {
-  grid-column: 3;
-  grid-row: 5;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  position: sticky;
 }
 
 /* VISUAL */
@@ -330,120 +111,70 @@ li {
 
 li:before {
   content: '';
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   background: red;
   position: absolute;
-  /* right: 111.65%; */
-  right: 111.55%;
-  top: 35%;
+  right: 103.1%;
+  top: 52%;
   transform: translate(0, -50%);
   border-radius: 100%;
 }
 
 #temp:before {
   background-color: rgb(255, 0, 0);
+  border: 1.5px solid black;
 }
 
 #hum:before {
   background-color: rgb(200, 200, 200);
+  border: 1.5px solid black;
 }
 
 #prep:before {
   background-color: rgb(0, 255, 255);
+  border: 1.5px solid black;
 }
 
-/* .data {
-  margin-top: 40px;
-  padding: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: sticky;
-  grid-column: 4/16;
-  grid-row: 3;
-  line-height: 1.5;
-  z-index: -1;
-} */
+#time-date:before {
+  background-color: rgb(255, 255, 255);
+}
+
+#city:before {
+  background-color: rgb(255, 255, 255);
+}
 
 .data-names {
-  margin-top: 40px;
-  padding: 0;
+  font-size: 15px;
+  padding: 0%;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
   font-weight: 400;
   position: sticky;
-  grid-column: 3/16;
-  grid-row: 5;
+  grid-column: 2/16;
+  grid-row: 2;
   line-height: 1.5;
   z-index: 0;
 }
 
-#time {
-  padding-top: 145px;
-  grid-column: 3/5;
-  grid-row: 5;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  position: sticky;
-}
-
 #canvas-show {
-  /* margin-top: 10%;
-  margin-bottom: 10%; */
-
-  grid-column: 1 / 16;
-  grid-row: 5;
-  z-index: -2;
-
-  /* display: block;
+  grid-column: 5;
+  display: block;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  width: 100%;
-  height: auto */
-}
-
-.forecastday {
-  grid-column: 2/6;
-  grid-row: 6;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  position: sticky;
-}
-
-.forecastday-symbol {
-  grid-column: 3/6;
-  grid-row: 6;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  position: sticky;
-}
-
-.forecastday-value {
-  margin-top: 40px;
-  margin-bottom: 70px;
-  line-height: 1.5;
-  grid-column: 3/8;
-  grid-row: 6;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  position: sticky;
 }
 
 /* FOOTER */
 footer {
-  grid-column: 2/10;
-  text-align: left;
-  grid-row: 8;
+  grid-column: 5/9;
+  text-align: center;
+  grid-row: 3;
   font-size: 15px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   z-index: 2;
 }
 
