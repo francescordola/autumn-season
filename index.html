@@ -72,7 +72,7 @@
     *
   </div>
 
-  <div class=text-home-questions>
+<div class=text-home-questions>
   </br>
     How does climate change affect fungal growth and activity?</br>
     How do fungi mediate ecosystem responses to climatic variations?</br>
@@ -81,12 +81,21 @@
     <span class="name">Autumn Season</span>, is an ongoing research project that visualises and collect climate data over selected areas on our planet. 
     The aim is to analyse, predict and simulate the evolution of Matsutake mushrooms ecosystem in responses to current and future environmental changes.</br>
   </br>
-    (research progress online soon)</br>
-  </br>
-    &darr;
-  </br>
-  </span>
+    research in progress<span id="wait"></span>
+  <div class=text-home-questions-arrow>
+  &darr;
+  </div>
 </div>
+
+<script>
+  var dots = window.setInterval(function () {
+    var wait = document.getElementById("wait");
+    if (wait.innerHTML.length > 2)
+      wait.innerHTML = "";
+    else
+      wait.innerHTML += ".";
+  }, 500);
+</script>
   
   <div id="canvas-show"></div>
 
