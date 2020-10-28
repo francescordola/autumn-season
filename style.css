@@ -102,6 +102,18 @@ body {
   z-index: 2;
 }
 
+.name {
+  grid-row: 1;
+  font-size: 28.5px;
+  grid-column: 2 / 7;
+  font-family: 'IBM Plex Serif', serif;
+  font-style: italic;
+  letter-spacing: 0.30px;
+  padding-top: 11.5em;
+  font-weight: 700;
+  z-index: 2;
+}
+
 /* VISUAL */
 li {
   font-family: sans-serif;
