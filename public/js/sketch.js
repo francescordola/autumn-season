@@ -1,5 +1,3 @@
-// https://obfuscator.io
-
 let weather;
 
 let api = 'https://api.weatherapi.com/v1/forecast.json?key=';
