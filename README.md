@@ -14,7 +14,7 @@ My research introduces data as a system of interspecies exchange of information.
 
 ![PRESENTAZIONE3](https://user-images.githubusercontent.com/67789249/115018760-8f488e00-9eb8-11eb-8a4f-962a06e63a1b.jpg)
 
-"Autumn season" visualises and collect daily climate data from a weather API. The intention is to recreate the Matsutakes' mushroom ecosystem through the three primary variables affecting his growth: temperature, humidity and precipitation. <br>
+<b><i>Autumn Season</b></i> visualises and collect daily climate data from a weather API. The intention is to recreate the Matsutake mushrooms ecosystem through the three primary variables affecting his growth: temperature, humidity and precipitation. <br>
 Two sections define the project:<br>
 [1] an immersive digital environment that visualises the climate data over Baoshan in real-time<br>
 [2] a long-term database that will store the forecast data over days in the Chinese city.
