@@ -24,7 +24,7 @@ Two sections define the project:<br>
 ![PRESENTAZIONE2](https://user-images.githubusercontent.com/67789249/115018903-bacb7880-9eb8-11eb-9153-0685098545ad.jpg)
 
 Three main phases define this project:<br>
-[1] archive (ongoing)<br>
+[1] archive (<i>ongoing</i>)<br>
 [2] analysis<br>
 [3] simulation<br>
 
