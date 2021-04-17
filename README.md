@@ -6,7 +6,7 @@ Central Saint Martins - University of the Arts London<br>
 
 <b>What if we use design to permeate the boundaries between humans and non-humans?</b>
 
-We live in a world where fast changes make the future ever more uncertain. Design must be used not just for human purposes but for other living beings, too. 
+In the shifting world we live in, design must be used not just for human purposes but for other living beings, too.
 
 My research introduces data as a system of interspecies exchange of information. Translating data from the model used by one system into the pattern required by another, I want to encourage science discussions to non-scientists, raising humans' understanding of a bigger world surrounding us, the natural one.
 
