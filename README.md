@@ -28,6 +28,6 @@ Three main phases define this project:<br>
 [2] analysis<br>
 [3] simulation<br>
 
-The aim is to collect a large amount of data from speculating, analysing and predicting the fungi evolution in responses to current and future environmental changes.
+The aim is to collect weather data from speculating, analysing and predicting the fungi evolution in responses to current and future environmental changes.
 
 <i>&rarr; Stay tuned for more!</i>
