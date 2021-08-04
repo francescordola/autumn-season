@@ -2,7 +2,7 @@
 
 Central Saint Martins - University of the Arts London<br>
 [Research: <i>Design at the edge of scientific knowledge</i>]<br>
-<a https://francescordola.github.io/autumn-season/" target="_blank">&rarr; autumn-season</a>
+<a https://francescordola.github.io/autumn-season/" target="_blank">&rarr;> autumn-season </a>
 
 <b>What if we use design to permeate the boundaries between humans and non-humans?</b>
 
